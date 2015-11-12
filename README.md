@@ -7,7 +7,7 @@ TODO: acl lists, filtering based on acls
 Requirements
 ------------
 
-The cookbook has been written to be independent of other cookbooks.  Use a wrapper cookbook to add additional functionality
+The cookbook has been written to be independent of other cookbooks.  I use a wrapper cookbook to add additional functionality, like integrating with the squid cookbook.
 
 Attributes
 ----------
