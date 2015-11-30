@@ -1,8 +1,9 @@
 # defaults
-default['squidguard']['blacklist_cksum'] = ''
+default['squidguard']['blacklist_date'] = Date.new()
+default['squidguard']['update_days'] = 2
 
 # Blacklist data to use.
-# Choices are:  shallalist, mesd, toulouse
+# Choices are:  shallalist, toulouse
 default['squidguard']['blacklist'] = 'shallalist'
 default['squidguard']['filter'] = [ 'warez', 'porn' ]
 default['squidguard']['filter_redirect'] = 'http://www.example.com/bad_url.html'
@@ -12,15 +13,11 @@ case node['squidguard']['blacklist']
 
 when 'shallalist'
   default['squidguard']['blacklist_name'] = 'shallalist.tar.gz'
-  default['squidguard']['blacklist_url'] = "http://www.shallalist.de/Downloads/#{node['squidguard']['blacklist_name']}"
+  default['squidguard']['blacklist_url'] = "http://www.shallalist.de/Downloads"
   default['squidguard']['blacklist_unpack'] = "BL"
-when 'mesd'
-  default['squidguard']['blacklist_name'] = 'blacklists.tgz'
-  default['squidguard']['blacklist_url'] = "http://squidguard.mesd.k12.or.us/#{node['squidguard']['blacklist_name']}"
-  default['squidguard']['blacklist_unpack'] = "blacklists"
 when 'toulouse'
   default['squidguard']['blacklist_name'] = 'blacklists.tar.gz'
-  default['squidguard']['blacklist_url'] = "ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidguard_contrib/#{node['squidguard']['blacklist_name']}"
+  default['squidguard']['blacklist_url'] = "ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidguard_contrib"
   default['squidguard']['blacklist_unpack'] = "blacklists"
 
 end

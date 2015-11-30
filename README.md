@@ -35,7 +35,7 @@ Attributes
     <td><tt>['squidguard']['redirect']</tt></td>
     <td>String</td>
     <td>URL to redirect blocked URLs to</td>
-    <td><tt>http://www.jw.org/</tt></td>
+    <td><tt>http://www.example.com/bad_url.html</tt></td>
   </tr>
 </table>
 

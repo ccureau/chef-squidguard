@@ -3,9 +3,14 @@ squidguard CHANGELOG
 
 This file is used to list changes made in each version of the squidguard cookbook.
 
+0.1.1
+-----
+- Removed the mesd blacklist as it is no longer maintained
+- Fix checksum fetching
+
 0.1.0
 -----
-- [your_name] - Initial release of squidguard
+- Chris Cureau - Initial release of squidguard
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
