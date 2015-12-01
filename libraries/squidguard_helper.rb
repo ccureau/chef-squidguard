@@ -2,7 +2,7 @@ require 'date'
 
 def days_passed?(date, days)
   today = Date.parse(Time.now().to_s)
-  return (date + days) >= today
+  return today >= (date + days)
 end
 
 def date_today
