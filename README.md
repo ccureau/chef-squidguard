@@ -37,6 +37,12 @@ Attributes
     <td>URL to redirect blocked URLs to</td>
     <td><tt>http://www.example.com/bad_url.html</tt></td>
   </tr>
+  <tr>
+    <td><tt>['squidguard']['update_days']</tt></td>
+    <td>Integer</td>
+    <td>Number of days to wait until the blacklist is downloaded again</td>
+    <td><tt>2</tt></td>
+  </tr>
 </table>
 
 Usage
